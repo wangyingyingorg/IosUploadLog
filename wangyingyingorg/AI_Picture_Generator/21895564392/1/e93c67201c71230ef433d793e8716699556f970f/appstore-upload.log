@@ -1,0 +1,7 @@
+Running altool at path '/Applications/Xcode_16.4.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Frameworks/AppStoreService.framework/Support/altool'...
+2026-02-11 06:54:04.157 ERROR: [altool.6000014341C0] [ContentDelivery.Uploader.6000014341C0] CFBundleShortVersionString, “6f0c813ba93c52057df0860c96098a78”, must be composed of one to three period-separated integers. (-19239)
+2026-02-11 06:54:04.160 ERROR: [altool.6000014341C0] Exception caught. *** -[__NSArrayM insertObject:atIndex:]: object cannot be nil (-1010)
+ {
+    NSLocalizedDescription = "Exception caught.";
+    NSLocalizedFailureReason = "*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil";
+}
