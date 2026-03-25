@@ -1,0 +1,4 @@
+2026-03-25 05:53:56.216 xcodebuild[16925:54254] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/t5/f77_gwnj6p95qxy9py3fckx00000gn/T/AlbumManager_2026-03-25_05-53-56.213.xcdistributionlogs".
+Exported AlbumManager to: /Users/runner/work/Album_Manager/Album_Manager/AlbumManager.ipa
+** EXPORT SUCCEEDED **
+
