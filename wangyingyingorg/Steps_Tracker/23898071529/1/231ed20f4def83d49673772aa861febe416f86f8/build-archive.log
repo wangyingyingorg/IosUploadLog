@@ -1,0 +1,73 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./Steps_Tracker.xcworkspace -scheme Steps_Tracker -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/Steps_Tracker/Steps_Tracker/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'Steps_Tracker' in project 'Steps_Tracker'
+        ➜ Implicit dependency on target 'Pods-Steps_Tracker' in project 'Pods' via file 'Pods_Steps_Tracker.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'WYYKit' in project 'Pods' via options '-framework WYYKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-Steps_Tracker' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+        ➜ Explicit dependency on target 'WYYKit' in project 'Pods'
+    Target 'WYYKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Steps_Tracker/Steps_Tracker/Steps_Tracker/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 56f85022a37cf37511f5ac8f346739ed
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/Steps_Tracker-ehwqcjcmjwcbpvgszumxnfuptfxi/Build/Intermediates.noindex/ArchiveIntermediates/Steps_Tracker/IntermediateBuildFilesPath/XCBuildData/56f85022a37cf37511f5ac8f346739ed.xcbuilddata
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Pods-Steps_Tracker' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'WYYKit' from project 'Pods')
+/Users/runner/work/Steps_Tracker/Steps_Tracker/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 18.5.99. (in target 'UMAPM' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMAPM' from project 'Pods')
+/Users/runner/work/Steps_Tracker/Steps_Tracker/Steps_Tracker.xcodeproj: error: Provisioning profile "appstore-6758377665-20260402112515464" doesn't support the App Groups capability.  (in target 'Steps_Tracker' from project 'Steps_Tracker')
+/Users/runner/work/Steps_Tracker/Steps_Tracker/Steps_Tracker.xcodeproj: error: Provisioning profile "appstore-6758377665-20260402112515464" doesn't include the com.apple.security.application-groups entitlement. Profile qualification is using entitlement definitions that may be out of date. Connect to network to update. (in target 'Steps_Tracker' from project 'Steps_Tracker')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Steps_Tracker' from project 'Steps_Tracker')
+/Users/runner/work/Steps_Tracker/Steps_Tracker/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 18.5.99. (in target 'UMCommon' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMCommon' from project 'Pods')
+/Users/runner/work/Steps_Tracker/Steps_Tracker/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 18.5.99. (in target 'UMDevice' from project 'Pods')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'UMDevice' from project 'Pods')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace Steps_Tracker with scheme Steps_Tracker
+(1 failure)
