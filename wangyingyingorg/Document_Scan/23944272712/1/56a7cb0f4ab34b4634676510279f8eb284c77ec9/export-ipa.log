@@ -1,0 +1,4 @@
+2026-04-03 11:14:41.685 xcodebuild[16580:53681] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/tb/y368xp_x10s3ty1b_mtl5mxr0000gn/T/Document_Scan_2026-04-03_11-14-41.685.xcdistributionlogs".
+Exported Document_Scan to: /Users/runner/work/Document_Scan/Document_Scan/Document_Scan.ipa
+** EXPORT SUCCEEDED **
+
